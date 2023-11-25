@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meat標籤是用來給網頁上屬性的-->
+        <meta charset= "UTF-8" />
+        <meta name="description" content="黃柏維的網站,我學習html的地方" />
+        <meta name="author" content="黃柏維" />
+        <meta name="keywords" content="學習, html, 筆記" />
+        <meta name="viewports" content="width=device-width, initial-scale=1.0" /><!--表示視窗隨著裝置的不同調整比例，初始大小1.0是100%的意思-->
+        <title>黃柏維的網頁</title>
+    </head>
+    <body>
+        <h1>主畫面</h1><!--標題的用法-->
+        hello html 這裡是我學html程式的地方
+        <!--注解的方式-->
+        <p>文字跟段落的用法</p><!--使用p會自動斷行-->
+        <i>讓字變斜體</i>
+        <br/>
+        <b>讓字變成粗體</b>
+        <br/><!--換行-->
+        <hr/><!--加上直線-->
+
+        <!--使用a標籤連結與圖片用法-->
+            <a href="https://google.com">goolge website</a>
+            <br/>
+            <a href="page2.html">前往第二頁</a>
+            <br/>
+            <a href="dir/page3.html">前往第三頁</a>
+            <br/>
+            <a href="colorchart.png">這是色圖</a>
+            <br>
+            <hr/>
+
+            <!--使用img標籤來插入圖片-->
+            <img src="https://acgn.zone/ueditor/php/upload/image/20190425/1556133432882021.jpg" width="301"/><!--外部連結過來的-->
+            <br>
+            <img src="colorchart.png" height="400" width="301"/><!--網站內的圖片--><!--使用width跟height來調整圖片，如果單獨使用其一則會自動等比縮放-->
+            <br/>
+            <hr/>
+
+            <!--使用video來嵌入影片與yt連結-->
+            <video src="" controls>瀏覽器無法載入</video>
+            <br/>
+            <!--標籤夾著的文字是當影片或連結失效時會出現的-->
+            <!--使用controls指令使影片能夠動起來-->
+            <!--也可使用width跟height來調整大小-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/prn2iB3VxU0?si=K9t7ndZ_G8vSTIHb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br/>
+            <hr/>
+
+            <!-- 使用ul、ol標籤實現列表-->
+            <!--使用li使列表能夠放物件-->
+            <ul>
+                <li>Ig</li>
+                <li>Line</li>
+            </ul>
+            <!--ol標籤還能改變屬性-->
+            <ol type="i">
+                <li>Ig</li>
+                <li>Line</li>
+            </ol>
+
+            <!--使用table標籤來創建表格，也可調長寬-->
+            <table width="200" style="color:red;">
+                <!--tr標籤是行-->
+                <tr>
+                    <!--td標籤是列-->
+                    <td>姓名</td>
+                    <td>學號</td>
+                    <td>生日</td>
+                </tr>
+                <tr>
+                    <td>黃XX</td>
+                    <td>123</td>
+                    <td>0123</td>
+                </tr>
+                <tr>
+                    <td>黃OX</td>
+                    <td>456</td>
+                    <td>0456</td>
+                </tr>
+            </table>
+
+            <!--html的容器 div & span--><!--div會自動換行 span不會-->
+            <div style="color:red;"><!--方便美化與排版-->
+                <ol type="i">
+                    <li>Ig</li>
+                    <li>Line</li>
+                </ol>
+                <table width="200">
+                    <!--tr標籤是行-->
+                    <tr>
+                        <!--td標籤是列-->
+                        <td>姓名</td>
+                        <td>學號</td>
+                        <td>生日</td>
+                    </tr>
+                    <tr>
+                        <td>黃XX</td>
+                        <td>123</td>
+                        <td>0123</td>
+                    </tr>
+                    <tr>
+                        <td>黃OX</td>
+                        <td>456</td>
+                        <td>0456</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--使用input & textarea實現輸入-->
+            <input type="text" placeholder="請輸入帳號"/><!--placeholder會讓輸入格中出現妳要提示的文字-->
+            <br/>
+            <br/>
+            <input type="password" /><!--輸入password會遮擋-->
+            <!--type中還能夠輸入date供選擇日期、range選擇範圍、file上傳檔案、checkbox提供勾選-->
+            <br/>
+            <br/>
+            <!--可以供使用者或是開發者在欄位中輸入想要的文字-->
+            <textarea width="500" heigth="500">
+                吃我的雞雞!
+            </textarea>
+    </body>
+</html>
